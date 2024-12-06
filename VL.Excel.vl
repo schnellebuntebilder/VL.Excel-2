@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TYA0puPh1thNCeraX9JJO3" LanguageVersion="2024.6.7-0237-g0353095d36" Version="0.128">
-  <NugetDependency Id="BFnJh7zDtVAQDyA7F4C8p7" Location="VL.CoreLib" Version="2024.6.7-0237-g0353095d36" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TYA0puPh1thNCeraX9JJO3" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="BFnJh7zDtVAQDyA7F4C8p7" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="D4eIHGbIcm1MnWWzsaFgyi">
     <Canvas Id="ArrNKf1Qn8tLGN3pfNjyrc" DefaultCategory="VL.Excel" CanvasType="FullCategory">
       <!--
@@ -103,7 +103,7 @@
                       <Pin Id="GVQVwEH6it3LivDm3bFvHp" Name="File Path" Kind="InputPin" />
                       <Pin Id="TqULTkP1p4GQXOW5vPwBBO" Name="File Mode" Kind="InputPin" DefaultValue="Open" />
                       <Pin Id="Jc1PCLyVSL6P45hTThnkZd" Name="File Access" Kind="InputPin" />
-                      <Pin Id="ASIDbO7nC63PQQiVSByLjJ" Name="File Share" Kind="InputPin" />
+                      <Pin Id="ASIDbO7nC63PQQiVSByLjJ" Name="File Share" Kind="InputPin" DefaultValue="ReadWrite" />
                       <Pin Id="VU0H9Z0fYdAOl6hTdA95nF" Name="Result" Kind="OutputPin" />
                     </Node>
                   </Patch>
