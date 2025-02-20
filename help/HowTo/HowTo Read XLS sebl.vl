@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="P2BycSdhG0RPUNHyu6qDig" LanguageVersion="2025.7.0-0063-g96b7ca07e7" Version="0.128">
+  <NugetDependency Id="Vy4Qst5jEBkNsI3eexewOb" Location="VL.CoreLib" Version="2025.7.0-0063-g96b7ca07e7" />
+  <Patch Id="HibyCTIHCsqNT9P0Y9O66D">
+    <Canvas Id="Q7uPWSPxWwkPyKbjwM3DVy" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Q47rfFCRA2DN3Kzr47Yup9">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="EEviv7TegyFMPUxLrMyI1C">
+        <Canvas Id="KPzeyF7eFnnQK2yqerf2qD" CanvasType="Group">
+          <Node Bounds="268,397,85,19" Id="SlSD6DbsOdeNonGJ6X70mf">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastDependency="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Excel" />
+              <Choice Kind="ProcessAppFlag" Name="Reader (Excel)" />
+            </p:NodeReference>
+            <Pin Id="SUvpULKuTTQOujxWeNYwnq" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IyaAbCspII8MTIGQ1bhJRp" Name="Load" Kind="InputPin" />
+            <Pin Id="CgsYA0SNCIYOcuNjmd24Xe" Name="Excel File" Kind="InputPin" />
+            <Pin Id="RBRHVbtsjQEMOrZiTFtH9P" Name="Configuration" Kind="InputPin" />
+            <Pin Id="EOVFgtmmd0mOf5IrHB1sdR" Name="DataSetConfiguration" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AWvqDwgeQZrMi1Y4KkpGNo" Name="DataSet" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LUe7qRRvO0ANJiFt6AYSb3" Comment="Excel File" Bounds="310,321,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\test\test.xls">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ffxb2GLQkd8O6cB9iXcmUh" Comment="Load" Bounds="270,280,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="348,353,79,19" Id="QTxj6ikMj2CMYWheOpKwAa">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastDependency="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Configuration" />
+            </p:NodeReference>
+            <Pin Id="BRsTC4ThewBPYQjDWKzusg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="R2VDLXw0ZM3NLQUlmvwpZb" Name="Codepage" Kind="InputPin" />
+            <Pin Id="KdBlMkyzDTWOk5S0VPTssk" Name="Leaveopen" Kind="InputPin" />
+            <Pin Id="PqqpnwF3e5mOP5wkhWdTdv" Name="SetLeaveOpen" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VaKYcHqDPJxODRBkwEyrNR" Name="AutoDetectSeparators" Kind="InputPin" />
+            <Pin Id="AYQeV1F3VXjMTo0xCA1G2D" Name="Configuration" Kind="OutputPin" />
+            <Pin Id="CchHhswFuSXNfMLMrrcP9w" Name="SetAutoDetectSeparators" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="268,431,70,19" Id="EjZjQdxJdRUNj7A9ix7TnW">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastDependency="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToXElement" />
+            </p:NodeReference>
+            <Pin Id="TpBhyR8JbCPOBiFwWx2IWv" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MCBFpPztB0CLusVqRvhrAH" Name="DataSet" Kind="InputPin" />
+            <Pin Id="O9mQeLvro9nLwLjJeNkEs7" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="268,473,65,26" Id="QhbSQZOXmK1P24Lk2ocqO0">
+            <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="System.XML" />
+              <Choice Kind="OperationCallFlag" Name="XElement (Split)" />
+            </p:NodeReference>
+            <Pin Id="D4hlxfrY9nLOEGxPxlCeMl" Name="Input" Kind="InputPin" />
+            <Pin Id="MlcleOOxJz1MAQPxIpISne" Name="Name" Kind="OutputPin" />
+            <Pin Id="LLnjxAV2Ib6OG32Nn6SD7d" Name="Value" Kind="OutputPin" />
+            <Pin Id="PCpKkNwnlrmLHLG8ayNB3U" Name="Children" Kind="OutputPin" />
+            <Pin Id="NSsYLtw82E7PycqRf9qaf6" Name="Attributes" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="284,534,153,212" Id="I4YCZlqEwmvQWWKCEL8zOC">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="AsbFwSk5rkqLAkKEMVO3Lu" Name="Break" Kind="OutputPin" />
+            <Patch Id="LaPCIgrWS1vLlGD9DJkQxp" ManuallySortedPins="true">
+              <Patch Id="NGvc9L7o7EXPn33we8cpD8" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="NVAktdGJSFQPwpf6lfaRsP" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="Gd2zNwbF3lrMmuYzJQHchU" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="308,557,65,26" Id="S171ELEa6HjPGUpTwqJO0B">
+                <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="System.XML" />
+                  <Choice Kind="OperationCallFlag" Name="XElement (Split)" />
+                </p:NodeReference>
+                <Pin Id="JWvkspDwdqfOs4BWk82pV7" Name="Input" Kind="InputPin" />
+                <Pin Id="UEyeVp10ASXOQa2z1m41uQ" Name="Name" Kind="OutputPin" />
+                <Pin Id="EMssuQ3WwNmPbZ1Cr2uj6u" Name="Value" Kind="OutputPin" />
+                <Pin Id="U1g7gbiVfVcQTwqVr4Ittb" Name="Children" Kind="OutputPin" />
+                <Pin Id="DGs2wrFIHOdOU3MaJaPmt0" Name="Attributes" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="336,620,89,86" Id="KGwNJBecDr5P2XkteNbZhi">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="Be9nmPDBAIVOKtA9rFHyB4" Name="Break" Kind="OutputPin" />
+                <Patch Id="AhicrdTPm06PH8e0tmIEKr" ManuallySortedPins="true">
+                  <Patch Id="EViPxN3Yp1DMXCCspLRhD3" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="HoGPvORltlvNcN7NyywSQi" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="MbvxHQJ8u8WNu9NMa5yqqx" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="348,649,65,26" Id="VNH02NLoNHRP5Oj46TXxQr">
+                    <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <FullNameCategoryReference ID="System.XML" />
+                      <Choice Kind="OperationCallFlag" Name="XElement (Split)" />
+                    </p:NodeReference>
+                    <Pin Id="KAZkUA1xow8NUTWoVMaZfZ" Name="Input" Kind="InputPin" />
+                    <Pin Id="N2z3OXJLxhrPVaPRJHsOnJ" Name="Name" Kind="OutputPin" />
+                    <Pin Id="DlTB4dlUNnPLaeBfUHhMtp" Name="Value" Kind="OutputPin" />
+                    <Pin Id="UjYo7zl9n5TQLeQGsDnweJ" Name="Children" Kind="OutputPin" />
+                    <Pin Id="IsyZUinTe8uPLHnVIU0gbk" Name="Attributes" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="BTCpwWErnAGMR83ibQzeo3" Bounds="350,626" Alignment="Top" />
+                <ControlPoint Id="GgYuyI9Dbr1LuyOAASGzmq" Bounds="370,700" Alignment="Bottom" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="DojiiNT6nKEMWLl6LAQlDI" Bounds="310,540" Alignment="Top" />
+            <ControlPoint Id="OKzKibhsBe0N439yY8cykq" Bounds="370,740" Alignment="Bottom" />
+          </Node>
+          <Pad Id="LOiQ3Ozy1YLO3GTWy6Dtc8" Comment="" Bounds="370,777,405,98" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="534,497,79,95" Id="P5HA4FwOb1PONU3UvqmV8G">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastDependency="VL.Excel.vl">
+              <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetContentAsRows" />
+            </p:NodeReference>
+            <Pin Id="LexzJWQRUnNN2DScgBew9o" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Bj8855Y6DWZPSOFbmjyycX" Name="DataTable" Kind="InputPin" />
+            <Pin Id="R8eJ9sfOPysOdJZcKB5OlQ" Name="RemoveHeader" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Afitoq3CH36LPgBAGYjEvU" Name="Rows" Kind="OutputPin" />
+            <Pin Id="NeMBJsznFMWPXNQltcArEJ" Name="Caption" Kind="OutputPin" />
+            <Patch Id="MMcundhZCcUNyMkTAyrw7I" Name="Convert" ManuallySortedPins="true">
+              <Pin Id="SxyqG9zdVkYMwxofW0pJ15" Name="Input" Kind="InputPin" />
+              <Pin Id="AernyOOZcOaM8HGgd38CyH" Name="Result" Kind="OutputPin" />
+              <ControlPoint Id="OfQu3BZGCqVL4uCL0ht7Qi" Bounds="548,505" />
+              <ControlPoint Id="GJMLOirqpznOY5h6nRuAnv" Bounds="548,585" />
+              <Node Bounds="546,541,55,19" Id="PSqkFZwzInmPREi0VahrMn">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ToString" />
+                </p:NodeReference>
+                <Pin Id="Nd62Iw7HdaJNpSTTzaWHCW" Name="Input" Kind="InputPin" />
+                <Pin Id="MndofDM6L9HQbQ21y0FuxT" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Node Bounds="534,437,92,19" Id="J1dfHdddmE0OMr1Wn8b8Gv">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastDependency="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetSheetByIndex" />
+            </p:NodeReference>
+            <Pin Id="VKJMqzlW0weOxyJsTXQ8oN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="P5PLYjDa2YhLFVG7AgbUnS" Name="DataSet" Kind="InputPin" />
+            <Pin Id="K69b6E454qGMEJROiVIftD" Name="Index" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="MdzLzRP3kJ3M4JdgNMjITQ" Name="Sheet" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GgOdXlurVsmPRX5UyhfKb8" Comment="Rows" Bounds="536,614,417,82" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="AMedaA8ovhGLF1KaP0xyQt" Name="Create" />
+        <Patch Id="AHEFQNWUTFjNHeGpViZB3P" Name="Update" />
+        <ProcessDefinition Id="MQHvg9JS0XHMyx1BXRPW9w">
+          <Fragment Id="OkpsUxnIVxELXZaAQS4x5T" Patch="AMedaA8ovhGLF1KaP0xyQt" Enabled="true" />
+          <Fragment Id="BK627CaZejCLhNeUt0awbB" Patch="AHEFQNWUTFjNHeGpViZB3P" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="JBd8a27jR0TPhm7Srxz23I" Ids="LUe7qRRvO0ANJiFt6AYSb3,CgsYA0SNCIYOcuNjmd24Xe" />
+        <Link Id="Jt5mYa8eX7QMS1mSl1h2Uy" Ids="Ffxb2GLQkd8O6cB9iXcmUh,IyaAbCspII8MTIGQ1bhJRp" />
+        <Link Id="Erc0qGBhSdqOdBLCZ8Duik" Ids="AYQeV1F3VXjMTo0xCA1G2D,RBRHVbtsjQEMOrZiTFtH9P" />
+        <Link Id="QrHxACmTj8mL9LbWRvIdja" Ids="AWvqDwgeQZrMi1Y4KkpGNo,MCBFpPztB0CLusVqRvhrAH" />
+        <Link Id="D9etGjtULiRNgqttXUkJ8u" Ids="O9mQeLvro9nLwLjJeNkEs7,D4hlxfrY9nLOEGxPxlCeMl" />
+        <Link Id="RovoKsa5igkOv2CktDPAyv" Ids="BTCpwWErnAGMR83ibQzeo3,KAZkUA1xow8NUTWoVMaZfZ" />
+        <Link Id="JECHMcgieUOL0uHhLFEk7N" Ids="U1g7gbiVfVcQTwqVr4Ittb,BTCpwWErnAGMR83ibQzeo3" />
+        <Link Id="U2hB5rjRPc7QYmAqrxFeEj" Ids="DlTB4dlUNnPLaeBfUHhMtp,GgYuyI9Dbr1LuyOAASGzmq" />
+        <Link Id="Nnj3eEuDn3ZNcZISbhIHqR" Ids="DojiiNT6nKEMWLl6LAQlDI,JWvkspDwdqfOs4BWk82pV7" />
+        <Link Id="DOnJ6tQnSkkLGM7CQBdS7B" Ids="PCpKkNwnlrmLHLG8ayNB3U,DojiiNT6nKEMWLl6LAQlDI" />
+        <Link Id="FkzgEEBFqJMPV6ikU2sncn" Ids="GgYuyI9Dbr1LuyOAASGzmq,OKzKibhsBe0N439yY8cykq" />
+        <Link Id="DRO2TcMuYmdQa70tVUYCml" Ids="OKzKibhsBe0N439yY8cykq,LOiQ3Ozy1YLO3GTWy6Dtc8" />
+        <Link Id="TAX1buqeQojLJeDRvzpyKa" Ids="SxyqG9zdVkYMwxofW0pJ15,OfQu3BZGCqVL4uCL0ht7Qi" IsHidden="true" />
+        <Link Id="KMEcxVWYyuZPXZTuESoeCJ" Ids="GJMLOirqpznOY5h6nRuAnv,AernyOOZcOaM8HGgd38CyH" IsHidden="true" />
+        <Link Id="GxzAZDDF3ObOujUPXqN9L9" Ids="AWvqDwgeQZrMi1Y4KkpGNo,P5PLYjDa2YhLFVG7AgbUnS" />
+        <Link Id="SzGyWOSXMH3Oc5AaERk217" Ids="MdzLzRP3kJ3M4JdgNMjITQ,Bj8855Y6DWZPSOFbmjyycX" />
+        <Link Id="GNtwxNuDAUDQdnSS2ruoGt" Ids="OfQu3BZGCqVL4uCL0ht7Qi,Nd62Iw7HdaJNpSTTzaWHCW" />
+        <Link Id="K42rYkHjIPyO4Z5w9sjdQK" Ids="MndofDM6L9HQbQ21y0FuxT,GJMLOirqpznOY5h6nRuAnv" />
+        <Link Id="HUxy4IvuaFwNhMabqMFAPV" Ids="Afitoq3CH36LPgBAGYjEvU,GgOdXlurVsmPRX5UyhfKb8" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="Fd5LBhqDLQYOAHCSR3FF6S" Location="../../VL.Excel.vl" />
+</Document>

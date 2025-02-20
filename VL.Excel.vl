@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TYA0puPh1thNCeraX9JJO3" LanguageVersion="2024.6.6" Version="0.128">
-  <NugetDependency Id="BFnJh7zDtVAQDyA7F4C8p7" Location="VL.CoreLib" Version="2024.6.6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TYA0puPh1thNCeraX9JJO3" LanguageVersion="2025.7.0-0063-g96b7ca07e7" Version="0.128">
+  <NugetDependency Id="BFnJh7zDtVAQDyA7F4C8p7" Location="VL.CoreLib" Version="2025.7.0-0063-g96b7ca07e7" />
   <Patch Id="D4eIHGbIcm1MnWWzsaFgyi">
     <Canvas Id="ArrNKf1Qn8tLGN3pfNjyrc" DefaultCategory="VL.Excel" CanvasType="FullCategory">
       <!--
@@ -1129,7 +1129,7 @@
             <Patch Id="G9S7ModcaekPAGVU5NJCvO" ManuallySortedPins="true">
               <Patch Id="R0rlFYgbv8ULU5aRtPA2UY" Name="Create" ManuallySortedPins="true" />
               <Patch Id="A0W2zIedRV9Mcl3ZVa9lB9" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="980,264,78,26" AutoConnect="true" Id="UPjeSk63YtTOeMp3KJmgte">
+              <Node Bounds="980,264,78,26" Id="UPjeSk63YtTOeMp3KJmgte">
                 <p:NodeReference LastCategoryFullName="System.Data.DataColumn" LastDependency="System.Data.dll">
                   <Choice Kind="OperationNode" Name="ColumnName" />
                   <FullNameCategoryReference ID="System.Data.DataColumn" />
